@@ -530,7 +530,7 @@ export function matchRoutes<
   return matches;
 }
 
-export interface UIMatch<Data = unknown, Handle = unknown> {
+export type UIMatch<Data = unknown, Handle = unknown> = {
   id: string;
   pathname: string;
   params: AgnosticRouteMatch["params"];
